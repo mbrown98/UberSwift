@@ -11,6 +11,8 @@
 		C567FD4729CCFEE100770BA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C567FD4629CCFEE100770BA3 /* Assets.xcassets */; };
 		C567FD4A29CCFEE100770BA3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C567FD4929CCFEE100770BA3 /* Preview Assets.xcassets */; };
 		C567FD6129CD005300770BA3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C567FD6029CD005300770BA3 /* HomeView.swift */; };
+		C567FD6329CD00E800770BA3 /* UberMapViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C567FD6229CD00E800770BA3 /* UberMapViewRepresentable.swift */; };
+		C567FD6529CD02E800770BA3 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C567FD6429CD02E800770BA3 /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		C567FD4629CCFEE100770BA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C567FD4929CCFEE100770BA3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C567FD6029CD005300770BA3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		C567FD6229CD00E800770BA3 /* UberMapViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberMapViewRepresentable.swift; sourceTree = "<group>"; };
+		C567FD6429CD02E800770BA3 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,11 +55,11 @@
 		C567FD4129CCFEE000770BA3 /* UberSwift */ = {
 			isa = PBXGroup;
 			children = (
+				C567FD5929CCFF5B00770BA3 /* App */,
+				C567FD5A29CCFF6700770BA3 /* Core */,
 				C567FD5D29CCFF7700770BA3 /* Models */,
 				C567FD5C29CCFF7100770BA3 /* Managers */,
 				C567FD5B29CCFF6C00770BA3 /* Extensions */,
-				C567FD5A29CCFF6700770BA3 /* Core */,
-				C567FD5929CCFF5B00770BA3 /* App */,
 				C567FD4629CCFEE100770BA3 /* Assets.xcassets */,
 				C567FD4829CCFEE100770BA3 /* Preview Content */,
 			);
@@ -81,8 +85,8 @@
 		C567FD5A29CCFF6700770BA3 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				C567FD5F29CD004300770BA3 /* Views */,
 				C567FD5E29CD003A00770BA3 /* ViewModels */,
+				C567FD5F29CD004300770BA3 /* Views */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -97,6 +101,7 @@
 		C567FD5C29CCFF7100770BA3 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				C567FD6429CD02E800770BA3 /* LocationManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -119,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				C567FD6029CD005300770BA3 /* HomeView.swift */,
+				C567FD6229CD00E800770BA3 /* UberMapViewRepresentable.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -193,7 +199,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C567FD6529CD02E800770BA3 /* LocationManager.swift in Sources */,
 				C567FD4329CCFEE000770BA3 /* UberSwiftApp.swift in Sources */,
+				C567FD6329CD00E800770BA3 /* UberMapViewRepresentable.swift in Sources */,
 				C567FD6129CD005300770BA3 /* HomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -326,6 +334,7 @@
 				DEVELOPMENT_TEAM = NQ276MPSTN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please allow us to access your location to find you nearby drivers and rides";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -355,6 +364,7 @@
 				DEVELOPMENT_TEAM = NQ276MPSTN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please allow us to access your location to find you nearby drivers and rides";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
